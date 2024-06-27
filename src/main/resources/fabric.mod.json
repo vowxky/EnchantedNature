@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "enchantednature",
+  "version": "${version}",
+  "name": "EnchantedNature",
+  "description": "",
+  "authors": [
+    "vowxky",
+    "classic"
+  ],
+  "contact": {
+    "repo": "https://github.com/justi/TestProyects"
+  },
+  "license": "MIT",
+  "icon": "assets/enchantednature/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "vowxky.enchantednature.client.EnchantedNatureClient"
+    ],
+    "main": [
+      "vowxky.enchantednature.EnchantedNature"
+    ]
+  },
+  "mixins": [
+    "enchantednature.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
